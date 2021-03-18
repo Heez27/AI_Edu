@@ -1,0 +1,36 @@
+실습) 주어진 리스트에서 또 다른 주어진 문자를 제거하고 역순화 시켜 주는 프로그램
+    - ex) 입력값: abcabc  b    결과값: caca
+    - 입력은 s=list(input(“대상 문자열 입력”)
+             t=list(input(“제거할 문자 입력”) 
+    - 출력은 print(“결과 문자열은 {0} 입니다”.format(s))
+- 함수 call 은 revsqueeze(s, t)   # 
+    - 방법1) 인덱스로 접근해서 해결 (len 함수 사용)
+      방법2) extend(또는 append 메소드)와 reverse 메소드 사용해서 해결
+
+
+정답)
+
+result = [ ] 
+for c in s:
+   if (c != t):
+     result.extend(c)   #  result.append(c)
+result.reverse( )
+
+- 함수에서 
+         - 가변 위치 매개 변수로 받을 것
+         - 1) 인덱스로 접근 (len 함수 사용)
+           2) 또는, for  in 사용해서 접근 (순서열로 접근)
+           3) extend 메소드(또는 append 메소드, 또는 + 연산자, 또는 슬라이싱 연산자) 와
+reverse 메소드 사용해서 해결
+
+1) i = 0
+  while ( i < len(argc[0])
+     If (argc[0][i] != argc[1][0]])
+
+
+    i =i +1
+2)
+for c in argc[0]:
+   if (c != argc[1][0]):
+     argc[2].extend(c)   #  argc[2].append(c)  덧셈  바로 대입
+argc[2].reverse( )

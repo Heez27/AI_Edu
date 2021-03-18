@@ -1,0 +1,41 @@
+실습3
+문제) 주어진  정수형 데이터를 왼쪽으로 n-bit circular shift 시켜주는 프로그램을 짜시오.
+    - 010000…….000110 를 2-bit 왼쪽으로 circular shift 시키면 000000…….011001
+    - 입력은 num = int(input(“number 입력”))
+             n = int(input(“n 입력”))
+    - 출력은 입력된 num 을 2진수로 출력, n-bit circular shift 된 num 을 2진수로 출력
+
+
+정답)
+check = 0x8000000000000000  # 0 이 15개
+num1=num   # 출력후에 num 원본이 변경 되지 않도록 하기 위해서
+i = 0
+while (i<64) :
+      if ((num1 & check) == 0):
+print( "0", end = "", )
+      else:
+print( "1", end = "", )   # 리턴 하지 말라는 의미(라인 넘기지 말라는 의미)
+      num1 = num1 << 1
+i = i + 1
+print(“\n”)   # 원본 num 과 변경된 num 이 붙어서 출력 되는 경우에 사용
+
+i = 0
+while (i<n) :
+      if ((num & check) == 0):
+         num = num << 1
+      else:
+         num = num << 1
+         num = num | 1         #num 마지막에 1넣어주기 위함
+i = i + 1
+
+num1=num   # 출력후에 num 원본이 변경 되지 않도록 하기 위해서
+i = 0
+while (i<64) :
+      if ((num1 & check) == 0):
+print( "0", end = "", )
+      else:
+print( "1", end = "", )   # 리턴 하지 말라는 의미(라인 넘기지 말라는 의미)
+      num1 = num1 << 1
+i = i + 1
+
+

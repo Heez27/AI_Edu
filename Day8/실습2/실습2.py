@@ -46,4 +46,4 @@ loadImage(fname) #해당 파일을 inImage리스트에 불러들임
 displayImage(inImage) #윈도창에 출력
 
 canvas.pack()
-window.mainloop() #X(실행중지를 클릭하기 전까지 명령 입력을 기다리는 함수
+window.mainloop() #X(실행중지)를 클릭하기 전까지 명령 입력을 기다리는 함수

@@ -1,2 +1,0 @@
-파이썬
-C:\Users\BIT\AppData\Local\Programs\Python\Python36

@@ -1,0 +1,1 @@
+https://github.com/Heez27/django_practices02 참고
